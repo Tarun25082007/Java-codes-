@@ -6,6 +6,25 @@ public class hashset {
             String  n=sc.nextLine();
             HashSet<String> set=new HashSet<>();
             sub(n,0,"",set);
+            HashSet<Integer> s=new LinkedHashSet<>();
+            s.add(1);
+            s.add(2);
+            s.add(3);
+            s.add(4);
+            Iterator<Integer> it=s.iterator();
+            while(it.hasNext()){
+                System.out.println(it.next());
+            }
+            HashSet<Integer> ls=new HashSet<>();
+            ls.add(1);
+            ls.add(2);
+            ls.add(3);
+            ls.add(4);
+            it = ls.iterator();
+            while(it.hasNext()){
+                System.out.println(it.next());
+            }
+
         }
         public static void sub(String n,int k,String h,HashSet<String> set){
             if (k==n.length()){
