@@ -1,7 +1,7 @@
 import java.util.*;
     public class cf2 {
         public static int solu(String a) {
-            StringBuilder f = new StringBuilder();
+            StringBuilder f;
             StringBuilder h = new StringBuilder();
             int min=a.length();
             for (int i = 1; i < a.length()-1; i++) {

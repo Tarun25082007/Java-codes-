@@ -20,6 +20,9 @@ public static void func(String s,String p){
     for (int j=0;j<s.length();j++){
         String ns = s.substring(0,j)+s.substring(j+1);
         func(ns,p+s.charAt(j));
+        func(ns,p);//subsequence type can be there or cannot be
+        // this is an indirect back tracking logic
+
     }
 }
 }

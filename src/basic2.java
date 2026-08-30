@@ -10,7 +10,7 @@ public class basic2 {
 //    System.out.println(a==b?"hi":"bi");
 
 
-        System.out.println("enter sizw");
+        System.out.println("enter size");
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
         String[] ary=new String[a];
