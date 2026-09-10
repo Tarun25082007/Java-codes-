@@ -8,6 +8,7 @@ public class queque {
             arr=new int[n];
             this.size = n;
         }
+        // here we just do stuff with the same queue
         public static boolean isEmpty(){
             if (rear == - 1 ){
                 return true;
@@ -53,5 +54,5 @@ return front;
         System.out.println(Q.dequeue());
         System.out.println(Q.peek());
     }
-//array methosd done
+//array method done return
     }
