@@ -129,9 +129,10 @@ public static treeinfo diaon(Node root){
         treeinfo left=diaon(root.left);//to create left
         treeinfo right=diaon(root.right);
         int heigth = Math.max(left.ht,right.ht) + 1;//will increase the final thing
-        int dia1 = left.dia;
-        int dia2 = right.dia;
-        int dia3 = left.ht + right.ht+1;
+        int dia1 = left.dia;//case1
+        int dia2 = right.dia;//case2
+        int dia3 = left.ht + right.ht+1;//case3
+    // +1 for node remove for edges-
         int maxdia = Math.max(Math.max(dia1,dia2),dia3);
         treeinfo myinfo = new treeinfo(heigth,maxdia);
         return myinfo;
